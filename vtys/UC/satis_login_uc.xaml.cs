@@ -36,10 +36,16 @@ namespace vtys.UC
 
         private void satisuc_login_username_tb_LostKeyboardFocus(object sender, KeyboardFocusChangedEventArgs e)
         {
-            satisuc_login_username_tb.Text = "Kullanıcı Adı...";
-            satisuc_login_username_tb.Foreground = new SolidColorBrush(Colors.LightGray);
+            if(satisuc_login_username_tb.Text == "")
+
+            {
+                satisuc_login_username_tb.Text = "Kullanıcı Adı...";
+                satisuc_login_username_tb.Foreground = new SolidColorBrush(Colors.LightGray);
+
+                satisuc_login_username_tb.TextAlignment = TextAlignment.Center;
+            }
             
-            satisuc_login_username_tb.TextAlignment = TextAlignment.Center;
+           
 
         }
 
@@ -52,9 +58,15 @@ namespace vtys.UC
 
         private void satisuc_login_pass_tb_LostKeyboardFocus(object sender, KeyboardFocusChangedEventArgs e)
         {
-            satisuc_login_pass_tb.Text = "Kullanıcı Adı...";
-            satisuc_login_pass_tb.Foreground = new SolidColorBrush(Colors.LightGray);
-            satisuc_login_pass_tb.TextAlignment = TextAlignment.Center;
+            if(satisuc_login_pass_tb.Text  == "")
+            {
+                satisuc_login_pass_tb.Text = "Şifre...";
+                satisuc_login_pass_tb.Foreground = new SolidColorBrush(Colors.LightGray);
+                satisuc_login_pass_tb.TextAlignment = TextAlignment.Center;
+
+            }
+            
+          
         }
     }
 }
