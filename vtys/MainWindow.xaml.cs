@@ -50,7 +50,7 @@ namespace vtys
 
         private void btn_satis_mainmenu_Click(object sender, RoutedEventArgs e)
         {
-            vtys.Class.Class1.uc_ekle(panelDesktop, new satis_uc());
+            vtys.Class.Class1.uc_ekle(panelDesktop, new satis_login_uc());
         }
 
         private void btn_urunler_mainmenu_Click(object sender, RoutedEventArgs e)
