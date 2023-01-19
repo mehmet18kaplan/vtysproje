@@ -5,11 +5,18 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:vtys.UC.satis_uc_screens"
         mc:Ignorable="d"
-        Title="add_urun" Height="250" Width="400">
+        Title="add_urun" Height="500" Width="800">
     <Grid>
-        <Label>
-            <Label Content="Label" Width="" FontFamily="Cascadia Code" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="100,100,0,0"/>
-        </Label>
+        <StackPanel >
+            <Label Margin="0 40 0 0" Content="Yeni Ürün Ekleme Ekranı" Style="{DynamicResource satısuclabel}" Width="auto" HorizontalAlignment="Center" FontSize="18"></Label>
+            <TextBox Margin="0 20 0 0" BorderThickness="2" Padding="0 5 0 5 " HorizontalAlignment="Center"  TextWrapping="Wrap" Text="Ürün Adı..." VerticalAlignment="Center" Width="180" Height="auto" TextAlignment="Center" FontSize="18" FontFamily="Cascadia Code" Foreground="LightGray">
+            </TextBox>
+            <TextBox Margin="0 20 0 0" Padding="0 5 0 5 " HorizontalAlignment="Center"  TextWrapping="Wrap" Text="Alış Fiyatı..." VerticalAlignment="Top" Width="180" Height="auto" TextAlignment="Center" FontSize="18" FontFamily="Cascadia Code" Foreground="LightGray"/>
+            <TextBox Margin="0 20 0 0" Padding="0 5 0 5 " HorizontalAlignment="Center"  TextWrapping="Wrap" Text="Satış Fiyatı..." VerticalAlignment="Top" Width="180" Height="auto" TextAlignment="Center" FontSize="18" FontFamily="Cascadia Code" Foreground="LightGray"/>
+
+            <Button Margin="0 20 0 0" Content="Ürün ekle"  Width="auto" VerticalAlignment="Center" HorizontalAlignment="Center" Style="{DynamicResource satiseklebuton}" FontSize="16"/>
+
+        </StackPanel>
 
     </Grid>
 </Window>
